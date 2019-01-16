@@ -42,6 +42,9 @@ QuestionAnswer.prototype.getResponse = function() {
 }
 
 QuestionAnswer.prototype.setResponse = function(response) {
+    if(isNaN(response)) {
+        this.grade  = constants.RESPONSE.I;
+    }
     this.response = response;
 }
 
