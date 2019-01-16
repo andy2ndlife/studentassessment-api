@@ -6,6 +6,7 @@ var router = express.Router();
 /* POST request for assessment*/
 router.post('/', function(req, res, next) {
     var assessmentArr = [];
+    console.log('req.body.assessmen ',req.body.assessment)
     for (let qaSet of req.body.assessment) {
         var qaModelObj = new QaModel();
         qaModelObj.setInputVal(qaSet.inputVal);

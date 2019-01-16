@@ -102,8 +102,8 @@ QuestionAnswer.prototype.getOutput = function() {
 QuestionAnswer.prototype.getResult = function() {
     return {
         "inputVal" : this.inputVal,
-        "inputUnit" : constants.UNITS[this.inputUnit],
-        "targetUnit" : constants.UNITS[this.targetUnit],
+        "inputUnit" : this.inputUnit,
+        "targetUnit" : this.targetUnit,
         "response" : this.response,
         "output" :  this.getOutput(),
         "flag" :  this.grade
