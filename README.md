@@ -30,9 +30,19 @@ GET / 200 5.327 ms - 22
   1 passing (42ms)
 ```
 
-And test it by executing the shell script from the project root.
+
+Also the test can be performed by executing the shell script from the project root.
+
 ```sh
 
 ./script/test
 
+# Should be the below output incase of tests passed
+
+  GET /
+GET / 200 5.246 ms - 22
+    ✓ respond with Student Assessment API
+
+
+  1 passing (42ms)
 ```
