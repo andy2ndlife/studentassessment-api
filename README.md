@@ -21,6 +21,8 @@ We have a very basic test-case (just 1) for the API. To run tests, follow the be
 
 ```sh
 
+./node_modules/.bin/mocha ./test/test.js
+
 # Should be the below output incase of tests passed
   GET /
 GET / 200 5.327 ms - 22
